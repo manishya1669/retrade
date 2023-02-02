@@ -19,6 +19,8 @@ const Login = () => {
     state => state.auth
   );
 
+  console.log(isError, message);
+
   useEffect(
     () => {
       if (isError) {
@@ -43,9 +45,7 @@ const Login = () => {
 
   const onSubmit = e => {
     e.preventDefault();
-
     const userData = { email, password };
-
     dispatch(login(userData));
   };
 

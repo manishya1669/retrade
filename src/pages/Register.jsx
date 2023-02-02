@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
-import { FaUser } from "react-icons/fa";
+import { FaToiletPaperSlash, FaUser } from "react-icons/fa";
 import { register, reset } from "../features/auth/authSlice";
 import Spinner from "../components/Spinner";
 
@@ -14,7 +14,7 @@ const Register = () => {
     passwordConfirm: "",
   });
 
-  const { name, email, password, passwordConfirm } = formData;
+  const { email, password, passwordConfirm } = formData;
 
   const navigate = useNavigate();
   const dispatch = useDispatch();
@@ -44,8 +44,6 @@ const Register = () => {
 
   const onSubmit = (e) => {
     e.preventDefault();
-    console.log(formData);
-
     if (password !== passwordConfirm) {
       toast.error("Passwords do not match");
     } else {
