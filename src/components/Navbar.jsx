@@ -17,7 +17,7 @@ const Navbar = () => {
     navigate("/");
   };
   return (
-    <div className=" navbar px-3 bg-base-100 drop-shadow-lg">
+    <div className="navbar bg-base-100 w-full p-10" >
       <div className="flex-1">
         <a className=" flex items-center gap-3 btn btn-ghost normal-case text-xl">
           <img src={logo} width={35} height={35} alt="" />
