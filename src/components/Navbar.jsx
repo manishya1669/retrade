@@ -2,7 +2,8 @@ import { FaSignInAlt, FaSignOutAlt, FaUser } from "react-icons/fa";
 import { json, Link, useNavigate } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
 import { logout, reset } from "../features/auth/authSlice";
-import logo from '../components/images/reTrade.jpg'
+import logo from '../components/images/reTrade.jpg';
+import Navbar_Profile from "./Navbar/Navbar_Profile";
 
 const Navbar = () => {
   const navigate = useNavigate();
@@ -10,6 +11,7 @@ const Navbar = () => {
   //   const { user } = useSelector(state => state.auth);
 
   const user = JSON.parse(localStorage.getItem("pocketbase_auth"));
+  console.log(user);
 
   const onLogout = () => {
     dispatch(logout());
@@ -25,7 +27,8 @@ const Navbar = () => {
         </a>
       </div>
       <div className="flex-none">
-        {user
+
+        {user 
           ? <button className="btn" onClick={onLogout}>
               <FaSignOutAlt /> Logout
             </button>
