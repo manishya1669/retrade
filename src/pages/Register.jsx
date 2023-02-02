@@ -78,7 +78,7 @@ const Register = () => {
         <label htmlFor="passwd">Password</label>
         <input
           id="passwd"
-          type="text"
+          type="password"
           placeholder="password"
           value={password}
           name="password"
@@ -90,7 +90,7 @@ const Register = () => {
         <label htmlFor="cpasswd">Confirm Password</label>
         <input
           id="cpasswd"
-          type="text"
+          type="password"
           placeholder="confirm password"
           value={passwordConfirm}
           name="passwordConfirm"

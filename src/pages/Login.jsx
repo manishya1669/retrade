@@ -84,7 +84,7 @@ const Login = () => {
         <button className="btn" type="submit">
           Log-In
         </button>
-        <button className="btn">Create an Account</button>
+        <button className=" hover:bg-slate-200 p-4 rounded-xl">Create an Account</button>
       </div>
     </form>
   );
