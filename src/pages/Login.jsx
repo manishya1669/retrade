@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 import { FaSignInAlt } from "react-icons/fa";
 import { useSelector, useDispatch } from "react-redux";
 import { useNavigate } from "react-router-dom";
-import { toast } from "react-toastify";
+import { toast, ToastContainer } from "react-toastify";
 import { login, reset } from "../features/auth/authSlice";
 import Spinner from "../components/Spinner";
 
@@ -19,6 +19,8 @@ const Login = () => {
     state => state.auth
   );
 
+  console.log(isError, message);
+
   useEffect(
     () => {
       if (isError) {
@@ -29,7 +31,7 @@ const Login = () => {
         navigate("/feed");
       }
 
-      dispatch(reset());
+      // dispatch(reset());
     },
     [user, isError, isSuccess, message, navigate, dispatch]
   );
@@ -43,9 +45,7 @@ const Login = () => {
 
   const onSubmit = e => {
     e.preventDefault();
-
     const userData = { email, password };
-
     dispatch(login(userData));
   };
 
@@ -60,7 +60,9 @@ const Login = () => {
           id="Email"
           type="email"
           placeholder="email"
-          value={email}
+          value={
+            "createdtocode@gmail.com" // value={email}
+          }
           name="email"
           className="input w-full max-w-xs border border-black"
           onChange={onChange}

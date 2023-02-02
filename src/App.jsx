@@ -12,7 +12,6 @@ function App() {
   return (
     <>
       <Router>
-        <div className="container">
           <Navbar/>
           <Routes>
             <Route path="/feed" element={<Feed />} />
@@ -20,7 +19,6 @@ function App() {
             <Route path="/register" element={<Register />} />
             <Route path='/' element={<LandingPage /> } />
           </Routes>
-        </div>
       </Router>
     </>
   );
