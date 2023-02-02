@@ -1,5 +1,6 @@
 # retrade
 
 ### team 
-Rahil Siddique
-Aditya Yadav
+Rahil Siddique<br>
+Aditya Yadav<br>
+Priyam Shrivastava
