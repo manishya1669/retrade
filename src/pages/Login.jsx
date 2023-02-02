@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 import { FaSignInAlt } from "react-icons/fa";
 import { useSelector, useDispatch } from "react-redux";
 import { useNavigate } from "react-router-dom";
-import { toast, ToastContainer } from "react-toastify";
+import { toast } from "react-toastify";
 import { login, reset } from "../features/auth/authSlice";
 import Spinner from "../components/Spinner";
 
@@ -31,7 +31,7 @@ const Login = () => {
         navigate("/feed");
       }
 
-      // dispatch(reset());
+      dispatch(reset());
     },
     [user, isError, isSuccess, message, navigate, dispatch]
   );
