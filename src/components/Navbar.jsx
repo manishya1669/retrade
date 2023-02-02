@@ -2,8 +2,7 @@ import { FaSignInAlt, FaSignOutAlt, FaUser } from "react-icons/fa";
 import { json, Link, useNavigate } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
 import { logout, reset } from "../features/auth/authSlice";
-import logo from '../components/images/reTrade.jpg';
-import Navbar_Profile from "./Navbar/Navbar_Profile";
+import logo from '../images/reTrade.jpg'
 
 const Navbar = () => {
   const navigate = useNavigate();
