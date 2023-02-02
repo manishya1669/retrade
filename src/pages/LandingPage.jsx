@@ -1,5 +1,4 @@
 import React from "react";
-import service1 from "../components/images/service1.jpg"
 import service2 from "../components/images/service2.jpg"
 import service3 from "../components/images/service3.jpg"
 import service4 from "../components/images/service4.jpg"
@@ -41,7 +40,7 @@ const LandingPage = () => {
       </div>
       <div className=" lg:flex gap-10 p-10 mx-auto justify-center items-center">
       <div className='bg-gray-800 my-5 text-center shadow-lg p-5 rounded-xl hover:scale-110 transition duration-300 ease-in-out max-w-sm'>
-        <img className='mx-auto rounded-lg' src={service1} width={100} height={100}/>
+        <img className='mx-auto rounded-lg' src={service5} width={100} height={100}/>
         <h3 className=' text-lg font-medium pt-8 pb-2'>Bargain</h3>
         <p className='text-md py-2 leading-8 text-white'>
           Our website allow users to bargain on listed items to get the best value for the product and the wallet
@@ -88,7 +87,7 @@ const LandingPage = () => {
       </div>
 
       <div className='bg-gray-200 my-5 text-center shadow-lg p-5 rounded-xl hover:scale-110 transition duration-300 ease-in-out max-w-sm'>
-        <img className='mx-auto rounded-lg' src={service1} width={100} height={100}/>
+        <img className='mx-auto rounded-lg' src={service5} width={100} height={100}/>
         <h3 className=' text-lg font-medium pt-8 pb-2'>No Payments</h3>
         <p className='text-md py-2 leading-8 text-black'>
         there won't be problems of balance of payments crisis since money is not invovled in exchanges
