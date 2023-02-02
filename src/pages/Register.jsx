@@ -58,10 +58,11 @@ const Register = () => {
   }
 
   return (
-    <form className="p-3" onSubmit={onSubmit}>
-      <div className="p-4 flex gap-10 justify-center items-center my-5">
+    <form className="p-7 grid  grid-flow-row  shadow-2xl text-left justify-center" onSubmit={onSubmit}>
+     <div className="m-10 p-10  shadow-2xl">
+      <div className="   flex gap-40 justify-center items-center my-5">
         
-          <label htmlFor="Email">Email</label>
+          <label className="w-[5%]" htmlFor="Email">Email</label>
           <input
             id="Email"
             type="email"
@@ -73,8 +74,8 @@ const Register = () => {
           />
         
       </div>
-      <div className=" flex gap-4 justify-center items-center my-5">
-        <label htmlFor="passwd">Password</label>
+      <div className=" flex  gap-4 justify-center items-center my-5">
+        <label className="w-[60%]" htmlFor="passwd">Password</label>
         <input
           id="passwd"
           type="password"
@@ -86,7 +87,7 @@ const Register = () => {
         />
       </div>
       <div className=" flex gap-4 justify-center items-center my-5 ">
-        <label className="px-10" htmlFor="cpasswd">Confirm Password</label>
+        <label className="w-[60%]" htmlFor="cpasswd">Confirm Password</label>
         <input
           id="cpasswd"
           type="password"
@@ -99,6 +100,7 @@ const Register = () => {
       </div>
       <div className=" mx-auto text-center">
         <button className="btn">Create an Account!</button>
+      </div>
       </div>
     </form>
   );
