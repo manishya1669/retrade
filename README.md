@@ -3,4 +3,6 @@
 ### team 
 Rahil Siddique<br>
 Aditya Yadav<br>
-Priyam Shrivastava
+Priyam Shrivastava<br>
+Manish Yadav
+
