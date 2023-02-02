@@ -1,5 +1,5 @@
 import React  from "react"
-import logo from "../Images/HackLogo.png"
+import logo from "../../images/HackLogo.png"
 
 export default function Footer() {
   

@@ -1,4 +1,11 @@
 import React from "react";
+import service1 from '../images/service1.jpg'
+import service2 from '../images/service2.jpg'
+import service3 from '../images/service3.jpg'
+import service4 from '../images/service4.jpg'
+import service5 from '../images/service5.png'
+import service6 from '../images/service6.jpg'
+import arrow from '../images/arrow.png'
 import LandingPageFooter from '../components/LandingPage/LandingPage_footer'
 
 const LandingPage = () => {
@@ -19,7 +26,7 @@ const LandingPage = () => {
           <p className=" text-lg py-5 leading-8 text-gray-500 md:text-xl ">
             Click below to sign-up right away!
           </p>
-          <img src="../components/images/arrow.png" className="" width={200} height={200}  alt="" />
+        <img src={arrow} className="" width={200} height={200}  alt="" />
         </div>
 
         <button className=" text-xl ml-10 mb-10 bg-teal-600 py-3 px-4 rounded-lg text-white hover:scale-110 transition duration-300 ease-in-ou">
@@ -35,7 +42,7 @@ const LandingPage = () => {
       </div>
       <div className=" lg:flex gap-10 p-10 mx-auto justify-center items-center">
       <div className='bg-gray-800 my-5 text-center shadow-lg p-5 rounded-xl hover:scale-110 transition duration-300 ease-in-out max-w-sm'>
-        <img className='mx-auto rounded-lg' src="../components/images/service5.png" width={100} height={100}/>
+        <img className='mx-auto rounded-lg' src={service1} width={100} height={100}/>
         <h3 className=' text-lg font-medium pt-8 pb-2'>Bargain</h3>
         <p className='text-md py-2 leading-8 text-white'>
           Our website allow users to bargain on listed items to get the best value for the product and the wallet
@@ -43,7 +50,7 @@ const LandingPage = () => {
       </div>
 
       <div className='bg-gray-800 my-5 text-center shadow-lg p-5 rounded-xl hover:scale-110 transition duration-300 ease-in-out max-w-sm'>
-        <img className='mx-auto rounded-lg' src='../components/images/service2.jpg' width={100} height={100}/>
+      <img className='mx-auto rounded-lg' src={service2} width={100} height={100}/>
         <h3 className=' text-lg font-medium pt-8 pb-2'>Simple and Clean UI</h3>
         <p className='text-md py-2 leading-8 text-white'>
           We have a very simple and clean design making it very navigable irrespective of users experience with websites
@@ -51,7 +58,7 @@ const LandingPage = () => {
       </div>
 
       <div className='bg-gray-800 my-5 text-center shadow-lg p-5 rounded-xl hover:scale-110 transition duration-300 ease-in-out max-w-sm'>
-        <img className='mx-auto rounded-lg' src="../components/images/service3.jpg" width={100} height={100}/>
+        <img className='mx-auto rounded-lg' src={service3} width={100} height={100}/>
         <h3 className=' text-lg font-medium pt-8 pb-2'>Rating</h3>
         <p className='text-md py-2 leading-8 text-white'>
           Our website has a rating feature that allows users to rate dubious listings on the website and report the user
@@ -66,7 +73,7 @@ const LandingPage = () => {
       </div>
       <div className=" flex gap-10 p-10 mx-auto lg:justify-center items-center">
       <div className='bg-gray-200 my-5 text-center shadow-lg p-5 rounded-xl hover:scale-110 transition duration-300 ease-in-out max-w-sm'>
-        <img className='mx-auto rounded-lg' src="../components/images/service4.jpg" width={100} height={100}/>
+        <img className='mx-auto rounded-lg' src={service4} width={100} height={100}/>
         <h3 className=' text-lg font-medium pt-8 pb-2'>Money</h3>
         <p className='text-md py-2 leading-8 text-black'>
           You can save a lot of money when u dont have to pay for stuff
@@ -74,7 +81,7 @@ const LandingPage = () => {
       </div>
 
       <div className='bg-gray-200 my-5 text-center shadow-lg p-5 rounded-xl hover:scale-110 transition duration-300 ease-in-out max-w-sm'>
-        <img className='mx-auto rounded-lg' src="../components/images/service5.png" width={100} height={100}/>
+        <img className='mx-auto rounded-lg' src={service5} width={100} height={100}/>
         <h3 className=' text-lg font-medium pt-8 pb-2'>De-Clutering</h3>
         <p className='text-md py-2 leading-8 text-black'>
           Get rid of unwanted items by listing them here and get something useful in return
@@ -82,7 +89,7 @@ const LandingPage = () => {
       </div>
 
       <div className='bg-gray-200 my-5 text-center shadow-lg p-5 rounded-xl hover:scale-110 transition duration-300 ease-in-out max-w-sm'>
-        <img className='mx-auto rounded-lg' src="../components/images/service4.jpg" width={100} height={100}/>
+        <img className='mx-auto rounded-lg' src={service6} width={100} height={100}/>
         <h3 className=' text-lg font-medium pt-8 pb-2'>No Payments</h3>
         <p className='text-md py-2 leading-8 text-black'>
         there won't be problems of balance of payments crisis since money is not invovled in exchanges
