@@ -12,7 +12,7 @@ function App() {
   return (
     <>
       <Router>
-        <div className="container">
+        <div className="  ">
           <Navbar/>
           <Routes>
             <Route path="/feed" element={<Feed />} />
