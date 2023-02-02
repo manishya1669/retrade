@@ -11,7 +11,7 @@ const Register = () => {
   const [formData, setFormData] = useState({
     email: "",
     password: "",
-    passwordConfirm: ""
+    passwordConfirm: "",
   });
 
   const { email, password, passwordConfirm } = formData;
@@ -20,32 +20,29 @@ const Register = () => {
   const dispatch = useDispatch();
 
   const { user, isLoading, isError, isSuccess, message } = useSelector(
-    state => state.auth
+    (state) => state.auth
   );
 
-  useEffect(
-    () => {
-      if (isError) {
-        toast.error(message);
-      }
+  useEffect(() => {
+    if (isError) {
+      toast.error(message);
+    }
 
-      if (isSuccess || user) {
-        navigate("/feed");
-      }
+    if (isSuccess || user) {
+      navigate("/feed");
+    }
 
-      dispatch(reset());
-    },
-    [user, isError, isSuccess, message, navigate, dispatch]
-  );
+    dispatch(reset());
+  }, [user, isError, isSuccess, message, navigate, dispatch]);
 
-  const onChange = e => {
-    setFormData(prevState => ({
+  const onChange = (e) => {
+    setFormData((prevState) => ({
       ...prevState,
-      [e.target.name]: e.target.value
+      [e.target.name]: e.target.value,
     }));
   };
 
-  const onSubmit = e => {
+  const onSubmit = (e) => {
     e.preventDefault();
     if (password !== passwordConfirm) {
       toast.error("Passwords do not match");
@@ -61,24 +58,27 @@ const Register = () => {
   }
 
   return (
-    <form onSubmit={onSubmit}>
-      <div className=" flex gap-10 justify-center items-center my-5">
-        <label htmlFor="Email">Email</label>
-        <input
-          id="Email"
-          type="email"
-          placeholder="email"
-          value={email}
-          name="email"
-          className="input w-full max-w-xs border border-black"
-          onChange={onChange}
-        />
+    <form className="p-7 grid  grid-flow-row  shadow-2xl text-left justify-center" onSubmit={onSubmit}>
+     <div className="m-10 p-10  shadow-2xl">
+      <div className="   flex gap-40 justify-center items-center my-5">
+        
+          <label className="w-[5%]" htmlFor="Email">Email</label>
+          <input
+            id="Email"
+            type="email"
+            placeholder="email"
+            value={email}
+            name="email"
+            className="input w-full max-w-xs border border-black"
+            onChange={onChange}
+          />
+        
       </div>
-      <div className=" flex gap-4 justify-center items-center my-5">
-        <label htmlFor="passwd">Password</label>
+      <div className=" flex  gap-4 justify-center items-center my-5">
+        <label className="w-[60%]" htmlFor="passwd">Password</label>
         <input
           id="passwd"
-          type="text"
+          type="password"
           placeholder="password"
           value={password}
           name="password"
@@ -86,11 +86,11 @@ const Register = () => {
           onChange={onChange}
         />
       </div>
-      <div className=" flex gap-4 justify-center items-center my-5">
-        <label htmlFor="cpasswd">Confirm Password</label>
+      <div className=" flex gap-4 justify-center items-center my-5 ">
+        <label className="w-[60%]" htmlFor="cpasswd">Confirm Password</label>
         <input
           id="cpasswd"
-          type="text"
+          type="password"
           placeholder="confirm password"
           value={passwordConfirm}
           name="passwordConfirm"
@@ -100,6 +100,7 @@ const Register = () => {
       </div>
       <div className=" mx-auto text-center">
         <button className="btn">Create an Account!</button>
+      </div>
       </div>
     </form>
   );

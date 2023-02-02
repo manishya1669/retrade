@@ -2,6 +2,7 @@ import { FaSignInAlt, FaSignOutAlt, FaUser } from "react-icons/fa";
 import { json, Link, useNavigate } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
 import { logout, reset } from "../features/auth/authSlice";
+import logo from '../components/images/reTrade.jpg'
 
 const Navbar = () => {
   const navigate = useNavigate();
@@ -16,10 +17,11 @@ const Navbar = () => {
     navigate("/");
   };
   return (
-    <div className="navbar bg-base-100">
+    <div className="navbar bg-base-100 w-full px-3 drop-shadow-lg" >
       <div className="flex-1">
-        <a className="btn btn-ghost normal-case text-xl">
-          <Link to="/">reTrade</Link>
+        <a className=" flex items-center gap-3 btn btn-ghost normal-case text-xl">
+          <img src={logo} width={35} height={35} alt="" />
+          <Link className=" md:text-3xl text-xl" to="/">reTrade</Link>
         </a>
       </div>
       <div className="flex-none">
@@ -29,10 +31,10 @@ const Navbar = () => {
             </button>
           : <ul className="menu menu-horizontal px-1">
               <li>
-                <Link to="/Login">Login</Link>
+                <Link className=" md:text-md" to="/Login">Login</Link>
               </li>
               <li>
-                <Link to="/Register">Signup</Link>
+                <Link className=" md:text-md" to="/Register">Signup</Link>
               </li>
             </ul>}
       </div>
