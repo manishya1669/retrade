@@ -12,24 +12,24 @@ const LandingPage = () => {
   return (
   <div>
     <div className=' text-center p-10 py-10'>
-      <h2 className=' text-5xl py-2 text-teal-600 font-medium md:text-5xl text-bold'>reTrade</h2>
-      <h3 className='text-2xl py-2 md:text-2xl'>Exchange More, Spend Less: Join the Revolution on reTrade</h3>
+      <h2 className=' text-5xl py-2 font-bold  md:text-7xl text-bold'>reTrade</h2>
+      <h3 className='text-2xl py-2 md:text-3xl'>Exchange More, Spend Less: Join the Revolution on reTrade</h3>
       <p className=' text-lg py-5 leading-8 text-gray-500 md:text-xl max-w-xl mx-auto'>
-      Whether you want to trade up your old items for something new, or simply make room for the things you love, our community of users offers a smart and sustainable solution. So why wait? Join <span className=" text-teal-600">reTrade</span> and start swapping smarter, not harder!
+      Whether you want to trade up your old items for something new, or simply make room for the things you love, our community of users offers a smart and sustainable solution. So why wait? Join <span className=" font-bold">reTrade</span> and start swapping smarter, not harder!
       </p>
 
-      <div>
+      <div className=" hidden md:block">
         <h2 className=" text-2xl mt-10">
           Ready to start trading smarter, not harder?
         </h2>
         <div className=" flex mx-auto text-center justify-center">
-          <p className=" text-lg py-5 leading-8 text-gray-500 md:text-xl ">
+          <p className=" text-lg py-5 leading-8 text-gray-500 md:text-lg ">
             Click below to sign-up right away!
           </p>
-        <img src={arrow} className="" width={200} height={200}  alt="" />
+        <img src={arrow} className=" rotate-12 ml-5" width={200} height={50}  alt="" />
         </div>
 
-        <button className=" text-xl ml-10 mb-10 bg-teal-600 py-3 px-4 rounded-lg text-white hover:scale-110 transition duration-300 ease-in-ou">
+        <button className=" text-xl ml-10 mb-10 border border-black py-3 bottom-1 right-[45%] left-[45%] absolute px-3 rounded-lg text-black hover:scale-110 transition duration-300 ease-in-ou">
           Sign-Up
         </button>
         
@@ -38,7 +38,10 @@ const LandingPage = () => {
 
     <section className=" text-white bg-black">
       <div className=" p-2">
-        <h3 className=" text-2xl py-2 mx-10">How <span className=" text-teal-600">reTrade</span> features helps you 😉</h3>
+        <h3 className=" text-2xl py-2 mx-10">How <span className=" font-extrabold">reTrade</span> features helps you 😉</h3>
+        <p className=" py-2 mx-10">
+        We are a platform for customers to exchange, trade, or sell unwanted or unused items for something new. This allows customers to easily get rid of items they no longer need and get something new in return
+        </p>
       </div>
       <div className=" lg:flex gap-10 p-10 mx-auto justify-center items-center">
       <div className='bg-gray-800 my-5 text-center shadow-lg p-5 rounded-xl hover:scale-110 transition duration-300 ease-in-out max-w-sm'>
@@ -69,7 +72,7 @@ const LandingPage = () => {
 
     <section className=" text-black bg-white">
       <div className=" p-2">
-        <h3 className=" text-2xl py-2 mx-10">Advantages of using <span className=" text-teal-600">reTrade</span> ! 😉</h3>
+        <h3 className=" text-2xl py-2 mx-10">Advantages of using <span className=" font-extrabold">reTrade</span> ! 😉</h3>
       </div>
       <div className=" flex gap-10 p-10 mx-auto lg:justify-center items-center">
       <div className='bg-gray-200 my-5 text-center shadow-lg p-5 rounded-xl hover:scale-110 transition duration-300 ease-in-out max-w-sm'>
@@ -82,17 +85,17 @@ const LandingPage = () => {
 
       <div className='bg-gray-200 my-5 text-center shadow-lg p-5 rounded-xl hover:scale-110 transition duration-300 ease-in-out max-w-sm'>
         <img className='mx-auto rounded-lg' src={service5} width={100} height={100}/>
-        <h3 className=' text-lg font-medium pt-8 pb-2'>De-Clutering</h3>
+        <h3 className=' text-lg font-medium pt-8 pb-2'>Reduces Waste</h3>
         <p className='text-md py-2 leading-8 text-black'>
-          Get rid of unwanted items by listing them here and get something useful in return
+        By exchanging items, customers can reduce the amount of waste that goes into landfills.
         </p>
       </div>
 
       <div className='bg-gray-200 my-5 text-center shadow-lg p-5 rounded-xl hover:scale-110 transition duration-300 ease-in-out max-w-sm'>
         <img className='mx-auto rounded-lg' src={service6} width={100} height={100}/>
-        <h3 className=' text-lg font-medium pt-8 pb-2'>No Payments</h3>
+        <h3 className=' text-lg font-medium pt-8 pb-2'>Convenience</h3>
         <p className='text-md py-2 leading-8 text-black'>
-        there won't be problems of balance of payments crisis since money is not invovled in exchanges
+        We provide a convenient platform for customers to exchange items.
         </p>
       </div>
       </div>
