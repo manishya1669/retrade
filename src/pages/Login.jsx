@@ -60,9 +60,7 @@ const Login = () => {
           id="Email"
           type="email"
           placeholder="email"
-          value={
-            "createdtocode@gmail.com" // value={email}
-          }
+          value={email}
           name="email"
           className="input w-full max-w-xs border border-black"
           onChange={onChange}
